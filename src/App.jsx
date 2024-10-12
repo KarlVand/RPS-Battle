@@ -23,7 +23,29 @@ function App() {
         <div className={Styles.computerImage}></div>
       </div>
       {/* ----- BUTTON CONTAINER ----- */}
-      <div className={Styles.buttonContainer}></div>
+      <div className={Styles.buttonContainer}>
+        <button
+          className={Styles.button}
+          onClick={() => {
+            setCount(count + 1);
+          }}>
+          Rock
+        </button>
+        <button
+          className={Styles.button}
+          onClick={() => {
+            setCount(count + 1);
+          }}>
+          Paper
+        </button>
+        <button
+          className={Styles.button}
+          onClick={() => {
+            setCount(count + 1);
+          }}>
+          Scissors
+        </button>
+      </div>
     </div>
   );
 }

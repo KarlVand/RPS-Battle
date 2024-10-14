@@ -8,13 +8,13 @@
 }
 
 .gameContainer {
-  @apply relative flex w-4/5 h-3/4 bg-slate-900  rounded-3xl border-cyan-900 border-4 justify-between items-center;
+  @apply relative flex sm:flex-col md:flex-col lg:flex-row w-4/5 h-3/4 bg-slate-900  rounded-3xl border-cyan-900 border-4 justify-between items-center;
 }
 
 /* ----- GAME BOARD ----- */
 .playerImage,
 .computerImage {
-  @apply w-2/6 h-2/3 aspect-square flex-none bg-lime-200 m-24 rounded-3xl  border-8 flex justify-center items-center;
+  @apply relative w-2/6 h-2/3 aspect-square flex-none flex-shrink-0 bg-lime-200 m-24 rounded-3xl  border-8 flex justify-center items-center;
 }
 
 .playerImage {
@@ -26,7 +26,7 @@
 }
 
 .score {
-  @apply text-3xl text-white font-bold;
+  @apply relative text-3xl text-white font-bold;
 }
 
 /* ----- GAME BUTTONS ----- */

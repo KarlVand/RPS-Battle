@@ -1,0 +1,15 @@
+BEAT THE CAPTAIN
+
+1. display image on click + change on reclick !
+2. launch computer choice on click
+3. display score
+4. responsive 
+
+
+================================================
+
+layout Piraterie
+effects / animations on actions
+game system
+
+

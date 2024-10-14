@@ -4,7 +4,7 @@
 }
 
 .title {
-  @apply relative mt-0 text-5xl p-2 font-bold text-white;
+  @apply relative mt-0 text-5xl p-8 font-bold text-white;
 }
 
 .gameContainer {
@@ -14,7 +14,7 @@
 /* ----- GAME BOARD ----- */
 .playerImage,
 .computerImage {
-  @apply w-2/6 h-2/3 bg-lime-200 m-24 rounded-3xl  border-8;
+  @apply w-2/6 h-2/3 aspect-square flex-none bg-lime-200 m-24 rounded-3xl  border-8 flex justify-center items-center;
 }
 
 .playerImage {
@@ -32,8 +32,8 @@
 /* ----- GAME BUTTONS ----- */
 
 .buttonContainer {
-  @apply flex w-4/5 h-1/6 justify-center items-center;
+  @apply flex w-4/5 h-1/6 justify-around items-center;
 }
 .button {
-  @apply flex uppercase font-extrabold bg-slate-700 text-xl text-center w-2/6 h-2/3 justify-between items-center;
+  @apply flex uppercase font-extrabold bg-slate-700 border-cyan-900 text-white text-xl text-center rounded-xl border-4 w-1/6 h-2/5 justify-center items-center;
 }

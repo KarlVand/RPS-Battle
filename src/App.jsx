@@ -1,53 +1,9 @@
-import { useState } from "react";
 import "./index.css";
-import Styles from "./App.module.css";
+
+import Game from "./Game.jsx";
 
 function App() {
-  const [count, setCount] = useState(0);
-
-  return (
-    <div className={Styles.container}>
-      {/* ----- HEADER ----- */}
-      <h1 className={Styles.title}>ROCK, PAPER, SCISSORS</h1>
-      {/* ----- GAME CONTAINER ----- */}
-      <div className={Styles.gameContainer}>
-        <div className={Styles.playerImage}></div>
-
-        <div className={Styles.scoreContainer}>
-          <div className={Styles.score}>
-            <p>Score</p>
-            <p>{count}</p>
-          </div>
-        </div>
-
-        <div className={Styles.computerImage}></div>
-      </div>
-      {/* ----- BUTTON CONTAINER ----- */}
-      <div className={Styles.buttonContainer}>
-        <button
-          className={Styles.button}
-          onClick={() => {
-            setCount(count + 1);
-          }}>
-          Rock
-        </button>
-        <button
-          className={Styles.button}
-          onClick={() => {
-            setCount(count + 1);
-          }}>
-          Paper
-        </button>
-        <button
-          className={Styles.button}
-          onClick={() => {
-            setCount(count + 1);
-          }}>
-          Scissors
-        </button>
-      </div>
-    </div>
-  );
+  return <Game />;
 }
 
 export default App;

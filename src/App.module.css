@@ -4,33 +4,49 @@
 }
 
 .title {
-  @apply relative mt-0 text-2xl p-8 font-bold text-white;
+  @apply relative md:mt-[-5vh] lg:mt-0 text-2xl lg:text-5xl p-8 font-bold text-white z-10;
 }
 
 .gameContainer {
-  @apply relative flex flex-col p-0 md:flex-row w-[90vw] h-[80vh] bg-slate-900  rounded-3xl border-cyan-900 border-4 justify-center items-center;
+  @apply relative flex flex-col box-content p-0 md:mt-[-12vh] lg:mt-[5vh] md:flex-row w-[90vw] h-[80vh] bg-slate-900  rounded-3xl border-cyan-900 border-4  items-center;
 }
 
 /* ----- GAME BOARD ----- */
 .playerImage,
 .computerImage {
-  @apply relative w-[70vw] md:w-[30vw]  aspect-square flex-none flex-shrink-0 bg-lime-200 m-24 rounded-3xl  border-8 flex justify-center items-center;
+  @apply relative w-[70vw] md:w-[30vw]  my-[2vh] mx-[1vw] aspect-square flex-none flex-shrink-0 bg-lime-200 m-24 rounded-3xl  border-8 flex justify-center items-center;
 }
 
 .playerImage {
-  @apply order-2 md:order-1 border-lime-500;
+  @apply order-3 md:order-1 border-lime-500 justify-start;
 }
 
 .computerImage {
-  @apply order-1 md:order-3 border-red-500 start-0;
+  @apply order-1 md:order-3 border-red-500 justify-end;
 }
 
 .scoreContainer {
-  @apply order-3 md:order-2;
+  @apply order-2 md:order-2 flex mx-[5vw] w-[70vw] justify-center;
+}
+.score {
+  @apply relative flex text-3xl text-white font-bold justify-center items-center;
 }
 
-.score {
-  @apply relative text-3xl text-white font-bold;
+.pScore,
+.cScore {
+  @apply relative w-[50vw] h-auto flex flex-wrap;
+}
+
+.pScore {
+  @apply justify-start;
+}
+
+.cScore {
+  @apply justify-end;
+}
+
+.commentScore {
+  @apply absolute text-2xl text-white font-bold;
 }
 
 /* ----- GAME BUTTONS ----- */

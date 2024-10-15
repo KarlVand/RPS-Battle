@@ -82,9 +82,9 @@ function Game() {
         <div className={Styles.scoreContainer}>
           <div className={Styles.score}>
             <p>Score</p>
-            <p>{playerScore.current}</p>
-            <p>{computerScore.current}</p>
-            <p>{result}</p>
+            <p className="pScore">{playerScore.current}</p>
+            <p className="cScore">{computerScore.current}</p>
+            <p className="commentScore">{result}</p>
           </div>
         </div>
 

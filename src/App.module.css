@@ -1,28 +1,32 @@
 /* ----- MAIN LAYOUT ----- */
 .container {
-  @apply w-screen h-screen flex flex-col bg-slate-500 items-center justify-center;
+  @apply w-screen h-screen flex flex-col bg-slate-500 items-center justify-center overflow-hidden;
 }
 
 .title {
-  @apply relative mt-0 text-5xl p-8 font-bold text-white;
+  @apply relative mt-0 text-2xl p-8 font-bold text-white;
 }
 
 .gameContainer {
-  @apply relative flex sm:flex-col md:flex-col lg:flex-row w-4/5 h-3/4 bg-slate-900  rounded-3xl border-cyan-900 border-4 justify-between items-center;
+  @apply relative flex flex-col p-0 md:flex-row w-[90vw] h-[80vh] bg-slate-900  rounded-3xl border-cyan-900 border-4 justify-center items-center;
 }
 
 /* ----- GAME BOARD ----- */
 .playerImage,
 .computerImage {
-  @apply relative w-2/6 h-2/3 aspect-square flex-none flex-shrink-0 bg-lime-200 m-24 rounded-3xl  border-8 flex justify-center items-center;
+  @apply relative w-[70vw] md:w-[30vw]  aspect-square flex-none flex-shrink-0 bg-lime-200 m-24 rounded-3xl  border-8 flex justify-center items-center;
 }
 
 .playerImage {
-  @apply border-lime-500;
+  @apply order-2 md:order-1 border-lime-500;
 }
 
 .computerImage {
-  @apply border-red-500;
+  @apply order-1 md:order-3 border-red-500 start-0;
+}
+
+.scoreContainer {
+  @apply order-3 md:order-2;
 }
 
 .score {
@@ -35,5 +39,5 @@
   @apply flex w-4/5 h-1/6 justify-around items-center;
 }
 .button {
-  @apply flex uppercase font-extrabold bg-slate-700 border-cyan-900 text-white text-xl text-center rounded-xl border-4 w-1/6 h-2/5 justify-center items-center;
+  @apply flex uppercase font-extrabold bg-slate-700 border-cyan-900 text-white text-xl text-center rounded-xl border-4 w-auto h-auto px-4 justify-center items-center;
 }
